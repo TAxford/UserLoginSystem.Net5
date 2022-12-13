@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace UserLoginSystem.Net5
 {
@@ -10,10 +11,12 @@ namespace UserLoginSystem.Net5
 
         static void Main(string[] args)
         {
-            
+            Register();
+            Login();
+            Console.Read();
         }
 
-        public void Register()
+        public static void Register()
         {
             Console.WriteLine("Please enter your username");
             userName = Console.ReadLine();
