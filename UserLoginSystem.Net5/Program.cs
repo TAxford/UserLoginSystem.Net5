@@ -6,6 +6,7 @@ namespace UserLoginSystem.Net5
     {
 
         static string userName;
+        static string password;
 
         static void Main(string[] args)
         {
@@ -16,6 +17,8 @@ namespace UserLoginSystem.Net5
         {
             Console.WriteLine("Please enter your username");
             userName = Console.ReadLine();
+            Console.WriteLine("Please enter your password");
+            password = Console.ReadLine();
         }
 
 
